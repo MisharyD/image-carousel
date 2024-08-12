@@ -1,0 +1,34 @@
+.container
+{
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousal-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width:700px;
+    height: 700px;
+    padding:32px;
+    background-color: aliceblue;
+}
+
+.image-container
+{
+    width:100%;
+    height:80%;
+}
+
+.carousal-image
+{
+    background-image: url("../assets/images/bali.jpg");
+    background-size: cover;
+    width:100%;
+    height:100%;
+}
