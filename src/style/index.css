@@ -1,3 +1,8 @@
+:root
+{
+    --carousal-container-color:#f0f8ff;
+}
+
 .container
 {
     width:100%;
@@ -16,7 +21,7 @@
     width:700px;
     height: 700px;
     padding:32px;
-    background-color: aliceblue;
+    background-color: var(--carousal-container-color);
 }
 
 .image-container
@@ -27,8 +32,55 @@
 
 .carousal-image
 {
-    background-image: url("../assets/images/bali.jpg");
     background-size: cover;
     width:100%;
     height:100%;
+}
+
+.slider-container
+{
+    display: flex;
+    gap:1rem;
+    align-items: center;
+}
+
+.navigation-dots-container
+{
+    display: flex;
+    gap:0.5rem;
+}
+
+.previous, .next
+{
+    background-color: var(--carousal-container-color);
+}
+
+.arrow-left-icon
+{
+    width:25px;
+    fill:black
+}
+
+.arrow-right-icon
+{
+    width:25px;
+    fill:black
+}
+
+.navigation-dot
+{
+    border-radius: 50%;
+    width:12px;
+    height: 12px;
+    background-color: #CCCCCC;    
+}
+
+.selected-navigation-dot
+{
+    background-color: #7B61FF;
+}
+
+.hidden
+{
+    display: none;
 }
